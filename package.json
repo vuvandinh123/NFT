@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "scss": "node-sass --watch public/scss/input.scss -o public/css/"
+  }
+}
