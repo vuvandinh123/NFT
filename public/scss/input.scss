@@ -54,6 +54,7 @@ a {
     align-items: center;
   }
 }
+
 @mixin brud($color: #aa00ff, $left: 0, $top: 0) {
   width: 200px;
   height: 200px;
@@ -69,7 +70,37 @@ a {
     @content;
   }
 }
+
+@mixin btn($color:#1e50ff,$w:200px,$h:40px){
+
+    color: #fff;
+    width: $w;
+    height: $h;
+    background-color: $color;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      content: '';
+      left: 0;
+      top: 0;
+      width: 0px;
+      transform: rotate(10deg);
+      height: 100%;
+      position: absolute;
+      background-color: #ffffffb9;
+      display: block;
+      z-index: 99;
+      transition: .4s;
+    }
+    &:hover::before{
+      width: 50px;
+      left: 110%;
+    }
+  }
+
 @mixin buttom(){
+
   &::before{
     content: '';
     left: 0;
@@ -1079,4 +1110,94 @@ section {
         }
     }
   }
+}
+// collections 
+.collections{
+
+  .collections-header{
+    h3{
+      margin-top:200px ;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      color: var(--color-text);
+    }
+    .collections-btn{
+      @include flex-center('center');
+      margin-top: 40px;
+      gap: 15px;
+      .btn{
+        @include btn($dark,100px ,40px )
+      }
+      .btn:first-child{
+        @include btn(#011aff,100px ,40px )
+      }
+    }
+  }
+  .collections-content{
+    margin-top: 50px;
+  .list-items{
+    color: var(--color-text);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    .clton-item{
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      width: calc(33.33% - 10px);
+      max-width: 100%;
+      height: 84px;
+      gap: 15px;
+      background-color: $dark;
+      border-radius: 10px;
+      .clton-img{
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        img{
+          display: block;
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          // object-fit: cover;
+        }
+
+      }
+      .clton-title{
+        width: 200px;
+        h4{
+          font-size: 1.8rem;
+          margin: 10px 0;
+          font-weight: bold;
+        }
+        p{
+          font-size: 1.2rem;
+          color: var(--color-text);
+          font-weight: 100;
+        }
+      }
+      .trend{
+        text-align: end;
+        width: 100%;
+        color: #00ff05;
+        .red{
+          color: rgb(179, 15, 15);
+        }
+      }
+    }
+    @include media(877px){
+      .clton-item{
+        width: calc(50% - 10px);
+      }
+    }
+    @include media(579px){
+      .clton-item{
+        width: calc(100% - 10px);
+      }
+    }
+  } 
+
+}
 }
