@@ -1049,7 +1049,8 @@ section {
     color: var(--color-text);
     display: flex;
     gap: 1%;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    gap: 10px; }
     .collections .collections-content .list-items .clton-item {
       padding: 0 20px;
       display: flex;
