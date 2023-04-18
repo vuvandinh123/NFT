@@ -22,13 +22,18 @@ bars.addEventListener('click',()=>{
     })
 })
 
+// dark mod 
 let darkmod = document.querySelector('#darkmod');
 let body=document.querySelector('body')
-darkmod.addEventListener('change', function() {
+ darkmod.addEventListener('change', function() {
   if(darkmod.checked){
     body.classList.remove('darkmod')
+   darkmod.nextElementSibling.classList.add('fa-moon')
+   darkmod.nextElementSibling.classList.remove('fa-sun')
   } else {
     body.classList.add('darkmod')
+    darkmod.nextElementSibling.classList.remove('fa-moon')
+    darkmod.nextElementSibling.classList.add('fa-sun')
   }
 });
 
@@ -50,20 +55,20 @@ heart.forEach(e => {
 
 document.getElementById('prev').onclick=function(){
   const widthItem= document.querySelector('.category-card-item').offsetWidth;
-  document.querySelector('.category-content').scrollLeft -= widthItem + 20;
+  document.querySelector('.category-content').scrollLeft -= widthItem;
 }
 document.getElementById('next').onclick=function(){
   const widthItem= document.querySelector('.category-card-item').offsetWidth;
-  document.querySelector('.category-content').scrollLeft += widthItem + 20;
+  document.querySelector('.category-content').scrollLeft += widthItem ;
 }
 // arrow 2
 document.getElementById('prev2').onclick=function(){
   const widthItem= document.querySelector('.artist-item').offsetWidth;
-  document.querySelector('.artist-content').scrollLeft -= widthItem + 20;
+  document.querySelector('.artist-content').scrollLeft -= widthItem;
 }
 document.getElementById('next2').onclick=function(){
   const widthItem= document.querySelector('.artist-item').offsetWidth;
-  document.querySelector('.artist-content').scrollLeft += widthItem + 20;
+  document.querySelector('.artist-content').scrollLeft += widthItem;
 }
 
 
@@ -86,7 +91,7 @@ let x = setInterval(()=>{
 
 let cardTime= document.querySelectorAll('.card-time h5')
 
-
+// sale time card
 cardTime.forEach(e=>{
   let t = Math.ceil(Math.random()*12)
   let m = Math.floor(Math.random()*60)
@@ -111,20 +116,31 @@ cardTime.forEach(e=>{
   
 })
 
-// header 
+// header stcky
 let h=  document.querySelector('.header')
+let se=  document.querySelector('.search_collections')
 document.addEventListener('DOMContentLoaded',()=>{
   if(h.offsetTop==30){
     h.classList.add('sticky')
+    darkmod.addEventListener('change', function() {
+      if(darkmod.checked){
+        se.style.backgroundColor='#ffff'
+      } else {
+        se.style.background='#06000B'
+      }
+    });
   }
   window.addEventListener('scroll',()=>{
     if(this.scrollY == 0){
       h.style.top = '30px'
+      body.classList.contains('darkmod') ? se.style.backgroundColor='#06000B' : se.style.backgroundImage='linear-gradient(to right, #FAF1FF,#fff)';
     }
     if(this.scrollY > 0){
       h.classList.add('sticky')
       // h.style.opacity = '1'
       h.style.top = '0'
+      body.classList.contains('darkmod') ? se.style.background='#131528' : se.style.background='#ffff';
+      // se.style.backgroundColor='#131528'
 
     }
     else{

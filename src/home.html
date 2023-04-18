@@ -9,118 +9,193 @@
       rel="stylesheet"
       href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../public/css/input.css" />
   </head>
   <body class="darkmod">
+      <div class="blur">
+        <div class="blur-item"></div>
+        <div class="blur-item"></div>
+        <div class="blur-item"></div>
+        <div class="blur-item"></div>
+        <div class="blur-item"></div>
+        <div class="blur-item"></div>
+      </div>
+
     <header>
       <div class="container">
-        <div class="blur">
-          <div class="blur-item"></div>
-          <div class="blur-item"></div>
-          <div class="blur-item"></div>
-          <div class="blur-item"></div>
-          <div class="blur-item"></div>
-          <div class="blur-item"></div>
-        </div>
         <div class="header">
-        <div id="nav" class="navigation animationTop">
-          <span id="close" class="close"
-            ><i class="fa-solid fa-xmark"></i
-          ></span>
-          <div class="logo">NFT VVD<span class="color-red">.</span></div>
-          <div class="search">
-            <form action="" method="post">
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-              <input
-                id="s"
-                type="text"
-                value=""
-                required
-                placeholder="Search collection, item or user"
-              />
-              <label for="s" class="place"
-                >Search collection, item or user</label
-              >
-            </form>
-          </div>
-          <div class="menu">
-            <ul class="menu-list">
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Create</a></li>
-              <li><a href="#">Page</a></li>
-            </ul>
-          </div>
-          <div class="user">
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-          </div>
-          <label class="switch">
-            <input id="darkmod" type="checkbox" />
-            <span class="slider"></span>
-          </label>
-          <div class="nav-btn">
-            <a href="#">Connect Wallet</a>
-          </div>
-        </div>
-        <div class="bars-mb">
-          <div class="logo">NFT VVD <span class="color-red">.</span></div>
-          <div class="bars-mb-right">
-            <div class="search-mb">
-              <i id="search" class="fa-solid fa-magnifying-glass"></i>
-              <form
-                action=""
-                id="input-search"
-                class="form-search-mb"
-                method="post"
-              >
-                <input
-                  type="text"
-                  placeholder="Search collection, item or user"
-                />
+          <div id="nav" class="navigation animationTop">
+            <span id="close" class="close"
+              ><i class="fa-solid fa-xmark"></i
+            ></span>
+            <div class="logo">NFT VVD<span class="color-red">.</span></div>
+            <div class="search">
+              <form action="" method="post">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input
+                  id="s"
+                  type="text"
+                  value=""
+                  required
+                  placeholder="Search collection, item or user"
+                  autocomplete="off"
+                />
+                <label for="s" class="place"
+                  >Search collection, item or user</label
+                >
+                <div class="search_collections">
+                  <p>Recommended Collections</p>
+
+                  <ul>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata2.png" alt="" />
+                      </div>
+                      <div class="search-collec-name">
+                        <span> Fusionist - Bi·Mech</span>
+                      </div>
+                      <img src="../public/images/tich.png" alt="" />
+                    </li>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata3.jpg" alt="" />
+                      </div>
+                      <div class="search-collec-name">
+                        <span>Alpha Prestige - Fusionist</span>
+                      </div>
+                      <img src="../public/images/tich.png" alt="" />
+                    </li>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata1.png" alt="" />
+                      </div>
+                      <div class="search-collec-name">
+                        <span>Dream Girls NFT</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata4.png" alt="" />
+                      </div>
+                      <div class="search-collec-name">
+                        <span>The CR7 NFT Collection</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata5.jpg" alt="" />
+                      </div>
+                      <div class="search-collec-name">
+                        <span>ALPACADABRAZ</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata6.jpg" alt="" />
+                      </div>
+                      <div class="search-collec-name">
+                        <span>WonderfulDay Tiger NFT</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="search-collec-img">
+                        <img src="../public/images/avata7.png" alt="" />
+                      </div>
+                      <div class="search-collec-name"><span>TUD NFT</span></div>
+                    </li>
+                  </ul>
+                </div>
               </form>
             </div>
-            <button id="bars"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu">
+              <ul class="menu-list">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Create</a></li>
+                <li><a href="#">Page</a></li>
+              </ul>
+            </div>
+            <div class="user">
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+            
+            <div class="nav-btn">
+              <a href="#">Connect Wallet</a>
+            </div>
+            <label class="switch">
+              <input id="darkmod" type="checkbox" />
+              <i class="fa-solid fa-sun"></i>
+            </label>
+          </div>
+          <div class="bars-mb">
+            <div class="logo">NFT VVD <span class="color-red">.</span></div>
+            <div class="bars-mb-right">
+              <div class="search-mb">
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <form
+                  action=""
+                  id="input-search"
+                  class="form-search-mb"
+                  method="post"
+                >
+                  <input
+                    type="text"
+                    placeholder="Search collection, item or user"
+                  />
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+              <button id="bars"><i class="fa-solid fa-bars"></i></button>
+            </div>
           </div>
         </div>
       </div>
-        <section>
-          <div class="content">
-            <div class="title">
-              <p class="animationTop">Buy, Sell, And</p>
-              <div class="animationTop delay-01">
-                <img src="../public/images/title1.png" alt="" />Showcase
-              </div> 
-              <p class="animationTop delay-02" >Super <span class="color-red"> NFTs </span><img src="../public/images/title2.png" alt="" /></p>
-            </div>
-            <div class="title-text animationLeft">
-              <p>
-                Discover, collect, and sell extraordinary NFTs through our
-                awesome platform. Express yourself by your artwork though us.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                omnis fuga quod magnam architecto sed debitis ratione earum
-                aspernatur eligendi!
-              </p>
-              <button>Explore NFTs</button>
-            </div>
+    </header>
+    <section class="container">
+      <div class="content-home">
+        <div class="title">
+          <p class="animationTop">Buy, Sell, And</p>
+          <div class="animationTop delay-01">
+            <img src="../public/images/title1.png" alt="" />Showcase
           </div>
-          <div class="content-image">
-            <div class="image-item animationTop">
-              <img src="../public/images/image1.png" alt="" />
-            </div>
-            <div class="image-item animationTop">
-              <img src="../public/images/image2.png" alt="" />
-            </div>
-            <div class="image-item animationTop">
-              <img src="../public/images/image3.png" alt="" />
-            </div>
-          </div>
-        </section>
+          <p class="animationTop delay-02">
+            Super <span class="color-red"> NFTs </span
+            ><img src="../public/images/title2.png" alt="" />
+          </p>
+        </div>
+        <div class="title-text animationLeft">
+          <p>
+            Discover, collect, and sell extraordinary NFTs through our awesome
+            platform. Express yourself by your artwork though us. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Quidem omnis fuga quod
+            magnam architecto sed debitis ratione earum aspernatur eligendi!
+          </p>
+          <button>Explore NFTs</button>
+        </div>
       </div>
-      <div class="header-bottom">
-        <div class="bottom-content">
+      <div class="content-image">
+        <div class="image-item animationTop">
+          <img src="../public/images/image1.png" alt="" />
+        </div>
+        <div class="image-item animationTop">
+          <img src="../public/images/image2.png" alt="" />
+        </div>
+        <div class="image-item animationTop">
+          <img src="../public/images/image3.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="brands">
+      <div class="brand">
+        <div class="brand-content">
           <div class="container">
-            <div class="logo-header-bottom">
+            <div class="logo-brand">
               <div class="logo-img-item">
                 <img src="../public/images/coin.png" alt="" />
               </div>
@@ -137,7 +212,8 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
+
     <section>
       <div class="container">
         <div class="trending">
@@ -186,7 +262,7 @@
           <div class="list-cards">
             <div class="card">
               <div class="card-heart">
-                <img class="" src="../public/images/Heart2.png" alt="">
+                <img class="" src="../public/images/Heart2.png" alt="" />
               </div>
               <div class="card-image">
                 <img src="../public/images/card2.png" alt="" />
@@ -203,7 +279,11 @@
                   </div>
                   <div class="card-time">
                     <p>Remaining Time</p>
-                    <h5><span class="card-hours"> 12</span> : <span class="card-min">03</span> : <span class="card-sec">12</span></h5>
+                    <h5>
+                      <span class="card-hours"> 12</span> :
+                      <span class="card-min">03</span> :
+                      <span class="card-sec">12</span>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -213,7 +293,7 @@
             </div>
             <div class="card">
               <div class="card-heart">
-                <img class="" src="../public/images/Heart2.png" alt="">
+                <img class="" src="../public/images/Heart2.png" alt="" />
               </div>
               <div class="card-image">
                 <img src="../public/images/card3.png" alt="" />
@@ -230,7 +310,11 @@
                   </div>
                   <div class="card-time">
                     <p>Remaining Time</p>
-                    <h5><span class="card-hours"> 12</span> : <span class="card-min">03</span> : <span class="card-sec">12</span></h5>
+                    <h5>
+                      <span class="card-hours"> 12</span> :
+                      <span class="card-min">03</span> :
+                      <span class="card-sec">12</span>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -240,7 +324,7 @@
             </div>
             <div class="card">
               <div class="card-heart">
-                <img class="" src="../public/images/Heart2.png" alt="">
+                <img class="" src="../public/images/Heart2.png" alt="" />
               </div>
               <div class="card-image">
                 <img src="../public/images/card4.png" alt="" />
@@ -257,7 +341,11 @@
                   </div>
                   <div class="card-time">
                     <p>Remaining Time</p>
-                    <h5><span class="card-hours"> 12</span> : <span class="card-min">03</span> : <span class="card-sec">12</span></h5>
+                    <h5>
+                      <span class="card-hours"> 12</span> :
+                      <span class="card-min">03</span> :
+                      <span class="card-sec">12</span>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -267,7 +355,7 @@
             </div>
             <div class="card">
               <div class="card-heart">
-                <img class="" src="../public/images/Heart2.png" alt="">
+                <img class="" src="../public/images/Heart2.png" alt="" />
               </div>
               <div class="card-image">
                 <img src="../public/images/card5.png" alt="" />
@@ -284,7 +372,11 @@
                   </div>
                   <div class="card-time">
                     <p>Remaining Time</p>
-                    <h5><span class="card-hours"> 12</span> : <span class="card-min">03</span> : <span class="card-sec">12</span></h5>
+                    <h5>
+                      <span class="card-hours"> 12</span> :
+                      <span class="card-min">03</span> :
+                      <span class="card-sec">12</span>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -294,7 +386,7 @@
             </div>
             <div class="card">
               <div class="card-heart">
-                <img class="" src="../public/images/Heart2.png" alt="">
+                <img class="" src="../public/images/Heart2.png" alt="" />
               </div>
               <div class="card-image">
                 <img src="../public/images/card6.png" alt="" />
@@ -311,7 +403,11 @@
                   </div>
                   <div class="card-time">
                     <p>Remaining Time</p>
-                    <h5><span class="card-hours"> 12</span> : <span class="card-min">03</span> : <span class="card-sec">12</span></h5>
+                    <h5>
+                      <span class="card-hours"> 12</span> :
+                      <span class="card-min">03</span> :
+                      <span class="card-sec">12</span>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -321,7 +417,7 @@
             </div>
             <div class="card">
               <div class="card-heart">
-                <img class="" src="../public/images/Heart2.png" alt="">
+                <img class="" src="../public/images/Heart2.png" alt="" />
               </div>
               <div class="card-image">
                 <img src="../public/images/card7.png" alt="" />
@@ -338,7 +434,11 @@
                   </div>
                   <div class="card-time">
                     <p>Remaining Time</p>
-                    <h5><span class="card-hours"> 12</span> : <span class="card-min">03</span> : <span class="card-sec">12</span></h5>
+                    <h5>
+                      <span class="card-hours"> 12</span> :
+                      <span class="card-min">03</span> :
+                      <span class="card-sec">12</span>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -368,49 +468,65 @@
           <div class="category-content">
             <div class="category-list-card">
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/category1.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/category1.png" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Art</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/category2.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/category2.png" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Music</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/category3.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/category3.png" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Photography</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/category4.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/category4.png" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Sports</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/nft1.jpg" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/nft1.jpg" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Sports</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/aft2.jpg" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/aft2.jpg" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Sports</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/category4.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/category4.png" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Sports</a>
                 </div>
               </div>
               <div class="category-card-item">
-                <div class="image"><img src="../public/images/category4.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/category4.png" alt="" />
+                </div>
                 <div class="category-item-footer">
                   <a href="#">Sports</a>
                 </div>
@@ -431,125 +547,124 @@
             <div class="list-items">
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections1.png" alt="">
+                  <img src="../public/images/collections1.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>CloneX</h4>
                   <p>302.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collection13.png" alt="">
+                  <img src="../public/images/collection13.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>Otherdeed</h4>
                   <p>302.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections2.png" alt="">
+                  <img src="../public/images/collections2.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>ApeYachtClub</h4>
                   <p>302.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections3.png" alt="">
+                  <img src="../public/images/collections3.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>Broadside</h4>
                   <p>302.6k ETH</p>
                 </div>
-                <div class="trend"><span class="red">-40.005%</span> </div>
+                <div class="trend"><span class="red">-40.005%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collection4.png" alt="">
+                  <img src="../public/images/collection4.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>SIM Dogs</h4>
                   <p>802.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections6.png" alt="">
+                  <img src="../public/images/collections6.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>Invisible Friends</h4>
                   <p>342.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections7.png" alt="">
+                  <img src="../public/images/collections7.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>Doodles</h4>
                   <p>422.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections8.png" alt="">
+                  <img src="../public/images/collections8.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>Moonbirds</h4>
                   <p>872.6k ETH</p>
                 </div>
-                <div class="trend"><span class="red">-10.01%</span> </div>
+                <div class="trend"><span class="red">-10.01%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections9.png" alt="">
+                  <img src="../public/images/collections9.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>ApepeYachtClub</h4>
                   <p>122.6k ETH</p>
                 </div>
-                <div class="trend"><span class="red">-5.01%</span> </div>
+                <div class="trend"><span class="red">-5.01%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collection10.png" alt="">
+                  <img src="../public/images/collection10.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>RENGA</h4>
                   <p>333.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections11.png" alt="">
+                  <img src="../public/images/collections11.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>PudgyPenguins</h4>
                   <p>652.1k ETH</p>
                 </div>
-                <div class="trend"><span class="red">-30.05%</span> </div>
+                <div class="trend"><span class="red">-30.05%</span></div>
               </div>
               <div class="clton-item">
                 <div class="clton-img">
-                  <img src="../public/images/collections12.png" alt="">
+                  <img src="../public/images/collections12.png" alt="" />
                 </div>
                 <div class="clton-title">
                   <h4>Cool Cats</h4>
                   <p>212.6k ETH</p>
                 </div>
-                <div class="trend"><span>+70.05%</span> </div>
+                <div class="trend"><span>+70.05%</span></div>
               </div>
-              
             </div>
             <div class="collections-all">
               <a href="#" class="btn">View All Collections</a>
@@ -561,14 +676,23 @@
             <h3>Most Popular Artist</h3>
             <div class="arow">
               <button id="prev2"><i class="fa-solid fa-arrow-left"></i></button>
-              <button id="next2"><i class="fa-solid fa-arrow-right"></i></button>
+              <button id="next2">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
+          </div>
+          <div class="container">
+
           </div>
           <div class="artist-content">
             <div class="artist-list-card">
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist1.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr1.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist1.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr1.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Mitchell Starc</h4>
@@ -578,8 +702,12 @@
                 </div>
               </div>
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist2.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr2.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist2.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr2.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Pat Cummins</h4>
@@ -589,58 +717,78 @@
                 </div>
               </div>
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist1.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr3.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist1.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr3.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Josh Hazlewood</h4>
                     <p>20,600+ Items</p>
                   </div>
-                  <button   class="btn follow">Unfollow</button>
+                  <button class="btn follow">Unfollow</button>
                 </div>
               </div>
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist2.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr1.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist2.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr1.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Mitchell Starc</h4>
                     <p>20,600+ Items</p>
                   </div>
-                  <button   class="btn follow">Unfollow</button>
+                  <button class="btn follow">Unfollow</button>
                 </div>
               </div>
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist2.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr1.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist2.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr1.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Mitchell Starc</h4>
                     <p>20,600+ Items</p>
                   </div>
-                  <button   class="btn follow">Unfollow</button>
+                  <button class="btn follow">Unfollow</button>
                 </div>
               </div>
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist2.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr1.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist2.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr1.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Mitchell Starc</h4>
                     <p>20,600+ Items</p>
                   </div>
-                  <button   class="btn follow">Unfollow</button>
+                  <button class="btn follow">Unfollow</button>
                 </div>
               </div>
               <div class="artist-item">
-                <div class="image"><img src="../public/images/artist2.png" alt=""></div>
-                <div class="background-artist"><img src="../public/images/bgr1.png" alt=""></div>
+                <div class="image">
+                  <img src="../public/images/artist2.png" alt="" />
+                </div>
+                <div class="background-artist">
+                  <img src="../public/images/bgr1.png" alt="" />
+                </div>
                 <div class="card-title">
                   <div>
                     <h4>Mitchell Starc</h4>
                     <p>20,600+ Items</p>
                   </div>
-                  <button   class="btn follow">Unfollow</button>
+                  <button class="btn follow">Unfollow</button>
                 </div>
               </div>
             </div>
