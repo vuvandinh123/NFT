@@ -1,15 +1,7 @@
 let search=document.querySelector('#search')
 let input=document.querySelector('#input-search')
 
-search.addEventListener('click',()=>{
-    input.classList.toggle('active');
-    if(input.classList.contains('active')){
-        search.classList.add('fa-light', 'fa-xmark')
-    }
-    else{
-        search.classList.remove('fa-light','fa-xmark')
-    }
-})
+
 
 let close_nav=document.querySelector('#close')
 let nav=document.querySelector('#nav')
@@ -21,6 +13,15 @@ bars.addEventListener('click',()=>{
         nav.classList.remove('active')
     })
 })
+search.addEventListener('click',()=>{
+  input.classList.toggle('active');
+})
+
+let close_search= document.querySelector('.close-search-mb')
+close_search.addEventListener('click',()=>{
+  document.querySelector('.form-search-mb').classList.remove('active')
+})
+
 
 // dark mod 
 let darkmod = document.querySelector('#darkmod');
