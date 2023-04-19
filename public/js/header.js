@@ -1,7 +1,39 @@
 let search=document.querySelector('#search')
 let input=document.querySelector('#input-search')
 
+function showLoading() {
+  document.getElementById("loading").classList.add("active");
+}
 
+// to top
+
+let totop = document.querySelector('.totop');
+window.addEventListener('scroll',()=>{
+  if(this.scrollY > 600){
+    totop.style.display = 'block';
+    totop.addEventListener('click',()=>{
+      window.scrollTo(0, 0);
+    })
+  }
+  else{
+    totop.style.display = 'none';
+  }
+})
+totop.addEventListener('click',()=>{
+
+})
+
+
+// Ẩn loading
+function hideLoading() {
+  document.getElementById("loading").classList.remove("active");
+}
+window.addEventListener('beforeunload', function() {
+  showLoading(); // Hiển thị loading trước khi tải lại trang
+});
+window.addEventListener('load', function() {
+  hideLoading(); // Ẩn loading khi trang đã được tải xong
+});
 
 let close_nav=document.querySelector('#close')
 let nav=document.querySelector('#nav')
